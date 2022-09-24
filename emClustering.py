@@ -56,7 +56,7 @@ for it in range(1):
         sumPDF = np.append(sumPDF, np.sum(weight[:,j]))
     #print("sumPDF",sumPDF)
     
-    # =============================================================================
+   # =============================================================================
     for j in range(k):
         #print("J",j)
         meanSum = 0
@@ -73,14 +73,8 @@ print(meanC)
 # =============================================================================
        
 print("\nThe final weights: \n", np.round(weight,2))
-#    
-#    
 for i in range(n):    
     cNumber = np.where(weight[i] == np.amax(weight[i]))
     X[i,d] = cNumber[0]
     
-print("\nThe data with cluster number: \n", X)
-
-   
-
-    
+print("\nThe data with cluster number: \n", X)    
